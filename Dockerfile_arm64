@@ -1,5 +1,4 @@
-# Build container;
-FROM openfalcon/makegcc-golang:1.10-alpine
+FROM jimmytinsley/makegcc-golang
 LABEL maintainer laiwei.ustc@gmail.com
 USER root
 
@@ -34,3 +33,4 @@ EXPOSE 8433 8080
 WORKDIR ${FALCON_DIR}
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+

@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
-	"github.com/open-falcon/falcon-plus/modules/transfer/proc"
+	"github.com/jhamohneesh/falcon-plus/modules/transfer/g"
+	"github.com/jhamohneesh/falcon-plus/modules/transfer/proc"
 	"github.com/toolkits/container/list"
 )
 

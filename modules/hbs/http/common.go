@@ -15,7 +15,7 @@
 package http
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/hbs/g"
+	"github.com/jhamohneesh/falcon-plus/modules/hbs/g"
 	"github.com/toolkits/file"
 	"net/http"
 	"strings"

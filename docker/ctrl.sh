@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DOCKER_DIR=/open-falcon
-of_bin=$DOCKER_DIR/open-falcon
+DOCKER_DIR=/jhamohneesh
+of_bin=$DOCKER_DIR/jhamohneesh
 DOCKER_HOST_IP=$(route -n | awk '/UG[ \t]/{print $2}')
 
 #use the correct mysql instance

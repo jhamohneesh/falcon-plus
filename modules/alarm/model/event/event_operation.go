@@ -21,8 +21,8 @@ import (
 	"database/sql"
 
 	"github.com/astaxie/beego/orm"
-	coommonModel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/common/utils"
+	coommonModel "github.com/jhamohneesh/falcon-plus/common/model"
+	"github.com/jhamohneesh/falcon-plus/common/utils"
 	log "github.com/sirupsen/logrus"
 )
 

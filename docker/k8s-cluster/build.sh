@@ -11,7 +11,7 @@ MODULES=(
     'nodata'
     'transfer'
 )
-DOCKER_REGISTRY=registry.cn-hangzhou.aliyuncs.com/open-falcon
+DOCKER_REGISTRY=registry.cn-hangzhou.aliyuncs.com/jhamohneesh
 VERSION=v0.3
 
 clean() {
@@ -24,12 +24,17 @@ clean() {
 
 build() {
     echo "build source..."
-    docker run -it --rm \
-        --name build \
-        -v "$(pwd)":"/go/src/github.com/open-falcon/falcon-plus" \
-        -w "/go/src/github.com/open-falcon/falcon-plus" \
-        openfalcon/makegcc-golang:1.10-alpine \
-        docker/k8s-cluster/init.sh
+    if [ `uname -m` == "aarch64"]; then
+        BASE_IMAGE_NAME=jimmytinsley/makegcc-golang \
+   else
+        BASE_IMAGE_NAME=openfalcon/makegcc-golang:1.10-alpine \
+   fi
+   docker run -it --rm \
+   --name build \
+   -v "$(pwd)":"/go/src/github.com/open-falcon/falcon-plus"
+   -w "/go/src/github.com/open-falcon/falcon-plus" \
+   $BASE_IMAGE_NAME \
+   docker/k8s-cluster/init.sh
 }
 
 buildDockerImages() {

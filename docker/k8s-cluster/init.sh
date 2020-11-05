@@ -3,5 +3,5 @@
 apk add --no-cache ca-certificates git bash \
 && make all \
 && make pack4docker \
-&& tar -zxf open-falcon-v*.tar.gz -C build \
-&& rm open-falcon-v*.tar.gz
+&& tar -zxf jhamohneesh-v*.tar.gz -C build \
+&& rm jhamohneesh-v*.tar.gz

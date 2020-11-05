@@ -1,4 +1,4 @@
 # Documentations
 
-- [Installation and Usage](http://book.open-falcon.com)
-- [Open-Faclon API](http://api.open-falcon.com)
+- [Installation and Usage](http://book.jhamohneesh.com)
+- [Open-Faclon API](http://api.jhamohneesh.com)
